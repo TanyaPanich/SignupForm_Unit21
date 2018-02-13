@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Form for Unit 21 checkpoint</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <label>Email</label>
+      <input type="email" name="email" tabindex="1" required pattern="[\w\.-]+@[\w\.-]+\.\w{2,4}"><br>
+      <label>Password </label>
+      <input type="password" name="userPassword" min="6" tabindex="1" required><br>
+      <label>Github Username</label>
+      <input type="text" name="GithubUsername" tabindex="1" required><br>
+    </fieldset>
+    <fieldset>
+      <input type="radio" name="accountType" value="Enterprise">
+      <label for="account-Enterprise">Enterprise</label>
+
+      <input type="radio" name="accountType" value="Pro">
+      <label for="account-Pro">Pro</label>
+
+      <input type="radio" name="accountType" value="Free">
+      <label for="account-Free">Free</label><br>
+
+      <input id="toRemember" type="checkbox" name="remember" value="remember">
+      <label for="toRemember">Remember me</label><br>
+
+      <input type="submit" value="Submit">
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
